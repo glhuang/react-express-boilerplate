@@ -2,6 +2,7 @@ var path = require('path');
 var fs = require('fs');
 
 module.exports = {
+  context: __dirname,
   entry: path.join(__dirname, 'src', 'client', 'entry.js'),
   output: {
     path: path.join(__dirname, 'build'),
@@ -22,6 +23,9 @@ module.exports = {
     ]
   },
   resolve: {
+    alias: {
+      src: path.join(__dirname, 'src'),
+    },
     extensions: ['', '.js','.json', '.jsx']
   }
 };
