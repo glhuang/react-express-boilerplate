@@ -1,8 +1,6 @@
 import chai, { expect } from 'chai';
 import dirtyChai from 'dirty-chai';
 
-import { sumTest } from 'src/client/testFile';
-
 chai.use(dirtyChai);
 
 describe('Example Test', () => {
